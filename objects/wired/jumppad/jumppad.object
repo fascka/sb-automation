@@ -1,10 +1,10 @@
 {
-  "objectName" : "revivestation",
+  "objectName" : "jumppad",
   "rarity" : "Common",
   "objectType" : "wire",
 
   "category" : "wire",
-  "price" : "2000",
+  "price" : "350",
   "description" : "Newton's 2nd Law applies with a boost!",
   "shortdescription" : "Jump Pad",
   "race" : "generic",
@@ -13,22 +13,22 @@
   "orientations" : [
     {
       "dualImage" : "jumppad.png:idle",
-      "imagePosition" : [-8, -8],
+      "imagePosition" : [0, 0],
       "collision" : "solid",
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
     }
   ],
 
-  "scripts" : [ "jumppad.lua" ],
+  "scripts" : [ "jumppad.lua", "/scripts/entityProxy.lua" ],
   "scriptDelta" : 5,
 
   "animation" : "jumppad.animation",
   "animationParts" : {
     "base" : "jumppad.png"
   },
-  "animationPosition" : [-8, -8],
+  "animationPosition" : [0, 0],
 
   "objectWidth" : 3,
-  "jumpSound" : "/sfx/jumppod.wav"
+  "jumpSound" : "/sfx/tech/tech_doublejump.wav"
 }
