@@ -1,0 +1,52 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "fanState" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 1
+          },
+          "work" : {
+            "frames" : 3,
+            "mode" : "loop",
+            "cycle" : 0.333
+          },
+          "slow" : {
+            "frames" : 3,
+            "mode" : "loop",
+            "cycle" : 0.666
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "base" : {
+        "properties" : {
+          "centered" : false
+        },
+
+        "partStates" : {
+          "fanState" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "work" : {
+              "properties" : {
+                "image" : "<partImage>:work.<frame>"
+              }
+            },
+            "slow" : {
+              "properties" : {
+                "image" : "<partImage>:work.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
