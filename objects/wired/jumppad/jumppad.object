@@ -29,6 +29,6 @@
   },
   "animationPosition" : [0, 0],
 
-  "objectWidth" : 3,
+  "scanRadius" : 3,
   "jumpSound" : "/sfx/tech/tech_doublejump.wav"
 }
